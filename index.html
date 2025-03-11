@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodrigo De los Ríos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/sees.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#" class="logo"><span>Rodrigo De los Ríos</span></a>
+
+        <ul class="nav-links">
+            <li>
+                <a href="#experience">Experiencia</a>
+            </li>
+
+            <li>
+                <a href="#projects">Proyectos</a>
+            </li>
+
+            <li>
+                <a href="#skills">Habilidades</a>
+            </li>
+        </ul>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <a href="https://github.com/RoudiOlding" target="_blank">
+            <button class="visit-btn">Visita mi Github</button>
+        </a>
+
+    </header>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="image-wrapper">
+                <img src="images/makotop3.png" alt="Makoto from Persona 3">
+            </div>
+
+            <div class="info-box">
+
+                <div class="text">
+                    <h3>Hola, soy</h3>
+                    <h1>Rodrigo De los Ríos</h1>
+                    <span id="typing-container">
+                        <span id="typing-text"></span>
+                        <span class="cursor"> | </span>
+                    </span>
+                </div>
+
+                <div class="btn-group">
+                    <div class="btn" id="download-cv">Descargar CV</div>
+                    <!-- Botón para abrir el modal de contacto -->
+                    <div class="btn" data-modal-target="#contacto-modal">Contacto</div>
+                </div>
+
+                <div class="socials">
+                    <a href="https://github.com/RoudiOlding" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rodrigodelosrios/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de contacto -->
+        <div id="contacto-modal" class="modal">
+            <div class="modal-content">
+                <button class="popup-close" data-close-modal>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h2>Contacto</h2>
+                <p><strong>Correo: </strong>rdelosrios040504@gmail.com</p>
+                <p><strong>Número: </strong>907987440 (+51)</p><br>
+                <hr><br>
+                <p><strong>Género: </strong>Masculino</p>
+                <p><strong>Edad: </strong>21</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+
+        <h2 class="section-title">Experiencia</h2>
+
+        <div class="experience-info">
+
+            <div class="grid">
+                <div class="grid-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Desarrollador Web</span>
+                    <h3>5 meses</h3>
+                    <p>
+                        Diseñé 15 páginas en Figma, las desarrollé en Wordpress y le añadí componentes personalizados con HMTL y CSS. Así como optimizar la web a nivel accesibilidad y SEO.
+                    </p><br>
+                    <!-- Botón para abrir el modal de experiencia -->
+                    <div class="btn-exp" data-modal-target="#exp-modal">+</div>
+                
+
+                </div>
+                <div class="grid-card">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>Profesor de Programación</span>
+                    <h3>4 meses</h3>
+                    <p>
+                        Capacité a más de 40 alumnos de entre 12 años de edad en programación por bloques en Scratch y Thunkable. Asegurando el éxito de más de 10 proyectos y juegos interactivos.
+                    </p><br>
+                    <div class="btn-exp" data-modal-target="#exp-modal-2">+</div>
+                </div>                
+            </div>
+
+            <!-- Modal de experiencia -->
+            <div id="exp-modal" class="modal">
+                <div class="modal-content">
+                    <button class="popup-close" data-close-modal>
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <h2>Consigue Ventas</h2>
+                    <span><strong>Desarrollador web & Lider SEO</strong></span><br><br>
+                    <span>Marzo 2024 — Julio 2024</span><br><br>
+                    <hr><br>
+                    <p><strong>Información: </strong>Empresa de consultoría de Marketing digital con 3 años de experiencia que ofrece desarrollo de software y páginas web a los clientes.</p>
+                    <hr><br>
+                    <span><strong>Funciones</strong></span><br><br>
+                    <ul>
+                        <li><strong>Diseñar</strong> y personalizar 15 páginas web en Elementor, optimizando su rendimiento mediante CSS y HTML avanzado.</li>
+                        <li><strong>Implementar</strong> estrategias SEO que permitieron que 3 páginas alcanzaran el top 1 en buscadores de Google.</li>
+                        <li><strong>Optimizar</strong> el rendimiento web, reduciendo el tiempo de carga en un 20% y aumentando el tráfico orgánico en un 15%.</li>
+                        <li><strong>Liderar</strong> el equipo SEO de 6 personas, definiendo las actividades mensuales, las páginas a trabajar y blogs a publicar.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Modal de experiencia 2 -->
+            <div id="exp-modal-2" class="modal">
+                <div class="modal-content">
+                    <button class="popup-close" data-close-modal>
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <h2>Tecky Brains</h2>
+                    <span><strong>Profesor de Programación (Voluntariado)</strong></span><br><br>
+                    <span>Noviembre 2023 — Febrero 2024</span><br><br>
+                    <hr><br>
+                    <p><strong>Información: </strong>Institución sin fines de lucro que ofrece talleres de tecnología basados en metodologías STEAM y Design Thinking a niños del Perú.</p>
+                    <hr><br>
+                    <span><strong>Funciones</strong></span><br><br>
+                    <ul>
+                        <li><strong>Capacitar</strong> a 40 estudiantes de entre 11 a 12 años en programación de bloques con Scratch y Thunkable.</li>
+                        <li><strong>Supervisar</strong> 10 proyectos funcionales y juegos interactivos, alcanzado el 100% de objetivos trazados.</li>
+                        <li><strong>Preparar</strong> el material de las clases, así como comunicar a los profesores el estado de la clase y sus avances.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <img src="images/makotop3.png" alt="makoto">
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="section-title">Proyectos Recientes</h2>
+    
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="images/TierkMaker.jpg" alt="First project: TierkMaker">
+                <h3>Tiermaker</h3>
+                <p>Web que permite crear tierslits personalizadas de cualquier tópico, con la capacidad de agregar archivos y tomar una captura de pantalla </p>
+                <div class="btn-group">
+                    <a href="https://roudiolding.github.io/TierMakeJSVanilla/" target="_blank">
+                        <div class="btn">Demostración</div>
+                    </a>
+                    <a href="https://github.com/RoudiOlding/TierMakeJSVanilla" target="_blank">
+                        <div class="btn">Github Repo</div>
+                    </a>
+                </div>
+                <a data-modal-target="#project-modal-1">Más información</a>
+            </div>
+    
+            <div class="project-card">
+                <img src="images/AppleCalculadora.jpg" alt="Second project: Apple Calculator">
+                <h3>Cálculadora Apple</h3>
+                <p>Recreación de la calculadora estilizado como la marca Apple. Permite hacer todas las operaciones, borrar y ver el resultado</p>
+                <div class="btn-group">
+                    <a href="https://roudiolding.github.io/CalculatorJSVanilla/" target="_blank">
+                        <div class="btn">Demostración</div>
+                    </a>
+                    <a href="https://github.com/RoudiOlding/CalculatorJSVanilla" target="_blank">
+                        <div class="btn">Github Repo</div>
+                    </a>
+                </div>
+                <a data-modal-target="#project-modal-2">Más información</a>
+            </div>
+    
+            <div class="project-card">
+                <img src="images/TempExChange.jpg" alt="Makoto from Persona 3">
+                <h3>Temperatura:Cambio</h3>
+                <p>Servicio que permite convertir la temperatura de un grado a otro: Celcius a Fahrenheit. Estilizado como el videojuego Persona 3 Reload</p>
+                <div class="btn-group">
+                    <a href="https://oldingtemperatureexcgange.pythonanywhere.com" target="_blank">
+                        <div class="btn">Demostración</div>
+                    </a>
+                    <a href="https://github.com/RoudiOlding/Web02_TemperatureExChange" target="_blank">
+                        <div class="btn">Github Repo</div>
+                    </a>
+                </div>
+                <a data-modal-target="#project-modal-3">Más información</a>
+            </div>
+    
+            <div class="project-card-hidden-project">
+                <img src="images/GoExcel.jpg" alt="Makoto from Persona 3">
+                <h3>Excel Go</h3>
+                <p>Operación de matrices ejecutada en consola usando el paradigma de programación funcional. Permitiendo operaciones y agregado de celdas</p>
+                <div class="btn-group">
+                    <a href="https://colab.research.google.com/drive/1b0Wi8Im9wEtY09aQ5VnCCesmudSK8n55?usp=sharing" target="_blank">
+                        <div class="btn">Demostración</div>
+                    </a>
+                    <a href="https://github.com/RoudiOlding/AlgoritmoMatrizNodos" target="_blank">
+                        <div class="btn">Github Repo</div>
+                    </a>
+                </div>
+                <a data-modal-target="#project-modal-4">Más información</a>
+            </div>
+
+            <div class="project-card-hidden-project">
+                <img src="images/TacoShop.jpg" alt="Makoto from Persona 3">
+                <h3>TacoShop</h3>
+                <p>Página HTML básica para la navegación de un restaurante ficticio de venta de tacos. Con la posibilidad de ver el menu y buscar información de la tienda</p>
+                <div class="btn-group">
+                    <a href="https://roudiolding.github.io/Web01_TacoShop/" target="_blank">
+                        <div class="btn">Demostración</div>
+                    </a>
+                    <a href="https://github.com/RoudiOlding/Web01_TacoShop" target="_blank">
+                        <div class="btn">Github Repo</div>
+                    </a>
+                </div>
+                <a data-modal-target="#project-modal-5">Más información</a>
+            </div>
+
+            <!-- 
+    
+            <div class="project-card-hidden-project">
+                <img src="images/makotop3.png" alt="Makoto from Persona 3">
+                <h3>Proyect B</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, at?</p>
+                <div class="btn-group">
+                    <div class="btn">Demostración</div>
+                    <div class="btn">Github Repo</div>
+                </div>
+                <a data-modal-target="#project-modal-6">Más información</a>
+            </div> -->
+        </div>
+    
+        <div class="toggle-container">
+            <button id="toggle-projects" class="btn">Ver más</button>
+        </div>
+
+        <div id="project-modal-1" class="modal">
+            <div class="modal-content">
+                <button class="popup-close" data-close-modal>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h2>Tiermaker</h2>
+                <div class="tech-stack">
+                    <p>JavaScript</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                </div><br>
+                <hr><br>
+                <span><strong>Funcionalidades</strong></span><br><br>
+                <ul>
+                    <li><strong>Nombrar</strong> libremente cada una de las secciones (tiers)</li>
+                    <li><strong>Desplazar</strong> cada elemento que sea agregado, con animaciones de como quedaría antes de colocarlo en una sección</li>
+                    <li><strong>Subir</strong> elementos propios para usarlo en el aplicativo; además, solo permite imágenes</li>
+                    <li><strong>Captura</strong> de pantalla de las secciones generadas, descargando la imagen en formato .png</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="project-modal-2" class="modal">
+            <div class="modal-content">
+                <button class="popup-close" data-close-modal>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h2>Cálculadora Apple</h2>
+                <div class="tech-stack">
+                    <p>JavaScript</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                </div><br>
+                <hr><br>
+                <span><strong>Funcionalidades</strong></span><br><br>
+                <ul>
+                    <li><strong>Mostrar</strong> los números digitados en la pantalla</li>
+                    <li><strong>Ejecutar</strong> sumas, restas, multiplicaciones, divisiones, borrar y ver el resultado</li>
+                    <li><strong>Verifica</strong> que el usuario digite los números para activar la función de calcular</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+        <div id="project-modal-3" class="modal">
+            <div class="modal-content">
+                <button class="popup-close" data-close-modal>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h2>Conversor de Temperatura</h2>
+                <div class="tech-stack">
+                    <p>Flask</p>
+                    <p>JavaScript</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Python</p>
+                </div><br>
+                <hr><br>
+                <span><strong>Funcionalidades</strong></span><br><br>
+                <ul>
+                    <li><strong>Digitar</strong> la temperatura que se quiere convertir</li>
+                    <li><strong>Altenear</strong> entre convertir la temperatura entre Celcius o Fahrenheit según la disposición del usuario</li>
+                    <li><strong>Muestra</strong> el resultado y un botón para volver al inicio y volver a realizar una consulta</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+        <div id="project-modal-4" class="modal">
+            <div class="modal-content">
+                <button class="popup-close" data-close-modal>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h2>Go Excel</h2>
+                <div class="tech-stack">
+                    <p>Go</p>
+                </div><br>
+                <hr><br>
+                <span><strong>Funcionalidades</strong></span><br><br>
+                <ul>
+                    <li><strong>Agregar</strong> files y columnas</li>
+                    <li><strong>Asignar</strong> un número a cada celda indicando la posición</li>
+                    <li><strong>Igualar</strong> la cantidad de filas y columnas</li>
+                    <li><strong>Sumar</strong> las celdas, o un rango</li>
+                    <li><strong>Promediar</strong> las celdas, o un rango</li>
+                    <li><strong>Rellenar</strong> con valores aleatorios las celdas vacías</li>
+                    <li><strong>Vaciar</strong> todas las celdas</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="project-modal-5" class="modal">
+            <div class="modal-content">
+                <button class="popup-close" data-close-modal>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h2>TacoShop</h2>
+                <div class="tech-stack">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                </div><br>
+                <hr><br>
+                <span><strong>Funcionalidades</strong></span><br><br>
+                <ul>
+                    <li><strong>Navegar</strong> a través de distinas páginas de una tienda de tacos</li>
+                    <li><strong>Activar</strong> trivias con preguntas y las respuestas escondidas</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="project-modal-6" class="modal">
+            <div class="modal-content">
+                <button class="popup-close" data-close-modal>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h2>Sixth</h2>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="skills" class="skills">
+        <h2 class="section-title">Habilidades</h2>
+
+        <div class="skils-grid">
+            <div class="skils-card">
+                <h2>Frontend</h2>
+                <div class="skils-icons-img">
+                    <img src="icons/frontend/html.png" alt="skil-html">
+                    <img src="icons/frontend/css.png" alt="skil-css">
+                    <img src="icons/frontend/javascript.png" alt="skil-javascript">
+                    <img src="icons/frontend/react.png" alt="skil-react">
+                    <img src="icons/frontend/astro.png" alt="skils-astro">
+                    <img src="icons/frontend/material.png" alt="skil-materialui">
+                    <img src="icons/frontend/swift.png" alt="skil-swift">
+                </div>
+            </div>
+
+            <div class="skils-card">
+                <h2>Backend</h2>
+                <div class="skils-icons-img">
+
+                    <img src="icons/backend/node.png" alt="skil-node">
+                    <img src="icons/backend/python.png" alt="skil-python">
+                    <img src="icons/backend/java.png" alt="skil-java">
+                    <img src="icons/backend/csharp.png" alt="skil-csharp">
+                    <img src="icons/backend/go.png" alt="skil-go">
+                    <img src="icons/backend/php.png" alt="skil-go">
+                    <img src="icons/backend/mysql.png" alt="skil-mysql">
+                    <img src="icons/backend/sqllite.jpeg" alt="skil-sqlite">
+                    <img src="icons/backend/flask.png" alt="skil-flask">
+                </div>
+            </div>
+
+            <div class="skils-card">
+                <h2>Otros</h2>
+                <div class="skils-icons-img">
+
+                    <img src="icons/otros/figma.png" alt="skils-figma">
+                    <img src="icons/otros/git.png" alt="skils-git">
+                    <img src="icons/otros/jest.png" alt="skils-jest">
+                    <img src="icons/otros/woocommerce.png" alt="skils-woocomerce">
+                    <img src="icons/otros/wordpress.png" alt="skils-wordpress">
+                    <img src="icons/otros/linux.png" alt="skils-linux">
+                    <img src="icons/otros/macos.png" alt="skils-macos">
+                    <img src="icons/otros/notion.png" alt="skils-notion">
+                </div>
+            </div>
+
+            <div class="skils-card-hide">
+                <h2>Hobbies</h2>
+
+                <div class="skils-icons-img">
+                    <img src="icons/hobbies/DrawIcon.png" alt="skils-draw" data-modal-target="#skil-modal-1">
+                    <img src="icons/hobbies/WrittingIcon.png" alt="skils-write" data-modal-target="#skil-modal-2">
+                    <img src="icons/hobbies/runningIcon.png" alt="skils-running" data-modal-target="#skil-modal-3">
+                    <img src="icons/hobbies/Pianoicon.png" alt="skils-piano" data-modal-target="#skil-modal-4">
+                    <img src="icons/hobbies/bookIcon.png" alt="skils-book" data-modal-target="#skil-modal-5">
+                    <img src="icons/hobbies/gameIcon.png" alt="skils-game" data-modal-target="#skil-modal-6">
+                    <img src="icons/hobbies/seriesIcon.png" alt="skils-series" data-modal-target="#skil-modal-7">
+                </div><br>
+
+                <span>Clickea en el símbolo para más información</span>
+            </div>
+
+            <div class="skils-card-hide">
+                <h2>Habilidades blandas</h2>
+            
+                <div class="skils-icons-container">
+                    <div class="skil-item">
+                        <img src="icons/blandas/resolucionIcon.png" alt="skils-resolucion">
+                        <p>Resolución de problemas</p>
+                    </div>
+                    <div class="skil-item">
+                        <img src="icons/blandas/comIcon.png" alt="skils-com">
+                        <p>Comunicación efectiva</p>
+                    </div>
+                    <div class="skil-item">
+                        <img src="icons/blandas/equipoIcon.png" alt="skils-equipo">
+                        <p>Trabajo en equipo y colaboración</p>
+                    </div>
+                    <div class="skil-item">
+                        <img src="icons/blandas/adaptabilidadIcon.png" alt="skils-adaptabilidad">
+                        <p>Adaptabilidad y aprendizaje continuo</p>
+                    </div>
+                    <div class="skil-item">
+                        <img src="icons/blandas/tiempoIcon.png" alt="skils-tiempo">
+                        <p>Gestión del tiempo y Organización</p>
+                    </div>
+                    <div class="skil-item">
+                        <img src="icons/blandas/empatiaicon.png" alt="skils-empatiaUsuario">
+                        <p>Orientación al usuario</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="toggle-container-skils">
+            <button id="toggle-skils" class="btn">Ver más</button>
+        </div>
+
+        <div id="skil-modal-1" class="modal">
+            <div class="modal-content">
+                <button class="popup-close" data-close-modal>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h2>Dibujo</h2>
+                <span>A los 14 años descubrí mi pasión por el dibujo, y desde entonces realizo de entre dos a tres prácticas semanales. Mi estilo mezcla el semirealismo con la animación japonesa. 
+                </span><br>
+                <span>
+                    Suelo dibujar rostros y torsos completos. Ahora me encuentro aprendiendo anatomía y teoría del color para mejorar mi arte.
+                </span><br><br>
+                <hr><br>
+                <img src="images/dibu1peacock.jpeg" alt="dibujo-Peacock"><br><br>
+                <a href="https://drive.google.com/drive/folders/1MKmY9zu64dBArhbD5Hh7xP7E40c1Ku6q?usp=sharing" target="_blank">
+                    <div class="btn">Ver más Dibujos</div>
+                </a>
+            </div>
+        </div>
+
+        <div id="skil-modal-2" class="modal">
+            <div class="modal-content">
+                <button class="popup-close" data-close-modal>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h2>Escritura</h2>
+                <span>
+                    A finales de 2021 comencé a escribir una historia: "Meibzial". Y desde aquel punto dedico muchas horas a las semanas en el trabajar en el desarrollo de sus cinco arcos. 
+                </span><br>
+                <span>
+                    Actualmente, el primer arco ya puede ser leído y ahora ando trabajando en el segundo y tercero.
+                </span><br><br>
+                <hr><br>
+                <img src="images/meibzProta.jpeg" alt="MeibzialProtagonistas"><br><br>
+            </div>
+        </div>
+
+        <div id="skil-modal-3" class="modal">
+            <div class="modal-content">
+                <button class="popup-close" data-close-modal>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h2>Correr</h2>
+                <span>
+                    Mantengo una rutina de 5am a 6am en la que salgo a correr al pentagonito, San Borja. En 2025 cumpliré 3 años corriendo y actualmente manejo un nivel intermedio avanzado.
+                </span><br>
+                <span>
+                    Actualmente corro a 5km-h, variando según la intensidad del entrenamiento. Y mi record absoluto fue 19:31 para 4.06km.
+                </span><br><br>
+                <hr><br>
+                <img src="images/runLevelSkils.jpeg" alt="MeibzialProtagonistas"><br><br>
+            </div>
+        </div>
+
+        <div id="skil-modal-4" class="modal">
+            <div class="modal-content">
+                <button class="popup-close" data-close-modal>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h2>Piano</h2>
+                <span>
+                    Durante el quinto de secundaria (2019) se me regaló un piano, y desde allí lo he tocado con frecuencia variante. Pese a ello, mantengo un sólido nivel intermedio.
+                </span><br>
+                <span>
+                    Es una de las actividades más relajantes que poseo. Mis tema favorito en piano es: Undertale (OST 71).
+                </span><br><br>
+                <hr><br>
+                <img src="images/pianoSkils.png" alt="MeibzialProtagonistas"><br><br>
+            </div>
+        </div>
+
+        <div id="skil-modal-5" class="modal">
+            <div class="modal-content">
+                <button class="popup-close" data-close-modal>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h2>Libros</h2>
+                <span>
+                    Desde pequeño desperté el gusto por la lectura, interesado principalmente en obras de terror, misterior y fantasía. Recientemente he retomado este hobbie con más fuerza.
+                </span><br>
+                <span>
+                    Mi autor favorito es Stephen King, así como mi libro favorito: The Shining.
+                </span><br><br>
+                <hr><br>
+                <img src="images/bookSkils.jpg" alt="MeibzialProtagonistas"><br><br>
+                <a href="https://roudiolding.notion.site/Libros-Rodrigo-De-los-R-os-1b3c85dc858e800282d2ea2de4baf362?pvs=74" target="_blank">
+                    <div class="btn">Ver mi TOP de libros</div>
+                </a>
+            </div>
+        </div>
+
+        <div id="skil-modal-6" class="modal">
+            <div class="modal-content">
+                <button class="popup-close" data-close-modal>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h2>Videojuegos</h2>
+                <span>
+                    Una de mis aficiones favoritas. Mi primer juego fue el God Of War cuando tenía 8 años. Comencé con las consolas de Nintendo y me terminé quedando con Playstation.
+                </span><br>
+                <span>
+                    Adoro jugar videojuegos Singleplayer, conocer y vivir sus historias. Mi juegos favoritos son Persona 3 Reload, Red Dead Redemption 2 y Undertale.
+                </span><br><br>
+                <hr><br>
+                <img src="images/gameSkils.png" alt="MeibzialProtagonistas"><br><br>
+                <a href="https://roudiolding.notion.site/Videojuegos-Rodrigo-De-los-R-os-1b3c85dc858e800bb0efe613a0f39e3d" target="_blank">
+                    <div class="btn">Ver mi TOP de videojuegos</div>
+                </a>
+            </div>
+        </div>
+
+        <div id="skil-modal-7" class="modal">
+            <div class="modal-content">
+                <button class="popup-close" data-close-modal>
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <h2>Videojuegos</h2>
+                <span>
+                    En secundaria desperté mi pasión por la animación japonesa, llevo 8 años consumiendo el medio y mi género favorito es el Slice of Life.
+                </span><br>
+                <span>
+                    Me encanta analizar historias, sus estructuras y sobretodo los personajes que guían el hilo de la historia hacia un mensaje o desarrollo final.
+                </span><br><br>
+                <hr><br>
+                <img src="images/mobSkil.jpg" alt="MeibzialProtagonistas"><br><br>
+                <a href="https://roudiolding.notion.site/Animes-Rodrigo-De-los-R-os-1b3c85dc858e803ba819f96c041ca35b" target="_blank">
+                    <div class="btn">Ver mi TOP de series</div>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+
+        <ul>
+            <li>
+                <a href="#about">Inicio</a>
+            </li>
+
+            <li>
+                <a href="#experience">Experiencia</a>
+            </li>
+
+            <li>
+                <a href="#projects">Proyectos</a>
+            </li>
+
+            <li>
+                <a href="#skills">Habilidades</a>
+            </li>
+
+        </ul>
+
+        <p class="copyright">&copy; All Rights Reserverd | Rodrigo De los Ríos</p>
+    </footer>
+    
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
