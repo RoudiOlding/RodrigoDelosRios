@@ -864,9 +864,10 @@ a {
 }
 
 .modal-content img {
-    max-width: 90%;
-    width: 20vw;
-    height: auto;
+    width: 70%;  /* Hace que las imágenes ocupen el 80% del modal */
+    height: auto; /* Ajusta automáticamente la altura según el ancho */
+    display: block;
+    margin: 0 auto; /* Centra la imagen dentro del modal */
     border-radius: 10px;
 }
 
@@ -1014,7 +1015,7 @@ html, body {
     .experience-info {
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        text-align: left;
         width: 100%;
         margin: auto;
     }
