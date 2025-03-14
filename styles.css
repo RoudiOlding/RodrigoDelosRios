@@ -751,7 +751,7 @@ a {
 }
 
 .tech-stack p {
-    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out; /* Transición suave */
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .tech-stack p:hover {
@@ -888,10 +888,10 @@ a {
 }
 
 .modal-content img {
-    width: 70%;  /* Hace que las imágenes ocupen el 80% del modal */
-    height: auto; /* Ajusta automáticamente la altura según el ancho */
+    width: 70%;
+    height: auto;
     display: block;
-    margin: 0 auto; /* Centra la imagen dentro del modal */
+    margin: 0 auto;
     border-radius: 10px;
 }
 
@@ -992,48 +992,44 @@ a {
     transform: translateY(0);
 }
 
-/* 🔹 Ajustes responsivos generales */
 html, body {
     width: 100%;
-    overflow-x: hidden; /* Evita el scroll horizontal */
+    overflow-x: hidden;
 }
 
-/* 🔹 Centra los títulos y ajusta el tamaño si es necesario */
 .section-title {
     text-align: center;
-    font-size: 2.5rem; /* Reduce el tamaño en móviles */
+    font-size: 2.5rem;
     margin-bottom: 1.5rem;
     width: 100%;
 }
 
 @media (max-width: 768px) {
     .section-title {
-        font-size: 2rem; /* Un poco más pequeño para pantallas chicas */
+        font-size: 2rem;
     }
 }
 
-/* 🔹 Ajuste del header en móviles */
 @media (max-width: 768px) {
     header {
-        width: 90%; /* Reduce el ancho del header para no sobresalir */
-        max-width: 600px; /* Máximo ancho en móviles grandes */
-        padding: 0.8rem 1rem; /* Ajuste del padding */
+        width: 90%;
+        max-width: 600px;
+        padding: 0.8rem 1rem;
         justify-content: space-between;
     }
 
     .logo {
-        font-size: 1rem; /* Reduce el tamaño del nombre */
+        font-size: 1rem;
     }
 
     #menu-icon {
-        font-size: 1.8rem; /* Ajusta el tamaño del ícono */
+        font-size: 1.8rem;
     }
 }
 
-/* 🔹 Ajuste general para la experiencia */
 @media (max-width: 768px) {
     .experience {
-        padding: 50px 5%; /* Ajusta padding lateral */
+        padding: 50px 5%;
     }
 
     .experience-info {
@@ -1045,8 +1041,8 @@ html, body {
     }
 
     .experience img {
-        width: 100%; /* Ajusta la imagen sin hacerla demasiado pequeña */
-        max-width: 400px; /* Máximo tamaño en móviles */
+        width: 100%;
+        max-width: 400px;
         border-radius: 15px;
     }
 
@@ -1059,7 +1055,7 @@ html, body {
     }
 
     .grid-card {
-        width: 95%; /* Hace las tarjetas más anchas */
+        width: 95%;
         padding: 2rem;
         font-size: 1rem;
     }
