@@ -427,126 +427,6 @@ footer ul li a {
     font-size: 300;
 }
 
-@media(max-width:1280px){
-    header {
-        padding: 1rem 2rem;
-        gap: 2rem;
-    }
-    .about .about-container {
-        gap: 3rem;
-    }
-    .experience-info {
-        flex-direction: column;
-    }
-    .input-box input{
-        padding: 2rem 5rem;
-        font-size: 2.5rem;
-    }
-    .input input::placeholder{
-        font-size: 2.5rem;
-    }
-    .input-box i{
-        font-size: 2.5rem;
-    }
-}
-
-@media(max-width:768px){
-    header {
-        gap: 1rem;
-        padding: 1rem 1rem;
-    }
-
-    header .logo {
-        font-size: 1rem;
-    }
-
-    header .visit-btn {
-        display: none;
-    }
-
-    .about-container {
-        flex-direction: column;
-    }
-
-    .input-box input {
-        padding: 1rem 2rem;
-        font-size: 1.8rem;
-    }
-
-    .input-box .input::placeholder {
-        font-size: 1.5rem;
-    }
-
-    .input-box i {
-        display: none;
-    }
-
-    .grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .experience-info img {
-        width: 70vw;
-    }
-}
-
-@media(max-width:600px){
-    header #menu-icon {
-        display: block;
-        cursor: pointer;
-    }
-    .nav-links {
-        position: absolute;
-        top: 100%;
-        margin-top: 1rem;
-        width: 100%;
-        padding: 1rem;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        background: rgba(0, 0, 0, 0.9);
-        border-radius: 3rem;
-        display: none;
-    }
-    .nav-links li {
-        margin-top: 1.5rem;
-        padding: 1rem;
-    }
-    .nav-links.active {
-        display: block;
-    }
-
-    header {
-        padding: 1rem 2rem;
-        gap: 5rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    header .logo {
-        font-size: 1.5rem;
-    }
-
-    .about-container img {
-        width: 80vw;
-    }
-
-    .input-box input {
-        padding: 0.5rem 3rem;
-        width: 80%;
-        font-size: 1.5rem;
-    }
-    
-    .input-box input::placeholder {
-        font-size: 1.5rem;
-    }
-
-    footer ul {
-        gap: 1rem;
-    }
-}
-
 a {
     text-decoration: none;
     color: inherit;
@@ -615,7 +495,6 @@ a {
 .modal-body {
     scrollbar-width: none;
 }
-
 
 .popup-close {
     position: absolute;
@@ -1004,18 +883,52 @@ html, body {
     width: 100%;
 }
 
-@media (max-width: 768px) {
-    .section-title {
-        font-size: 2rem;
-    }
-}
+/* Reponsive and Movile Design */
 
+
+/* Version 01 */
 @media (max-width: 768px) {
+
     header {
+        gap: 1rem;
+        padding: 1rem 1rem;
         width: 90%;
         max-width: 600px;
         padding: 0.8rem 1rem;
         justify-content: space-between;
+    }
+
+    header .logo {
+        font-size: 1rem;
+    }
+
+    header .visit-btn {
+        display: none;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .input-box input {
+        padding: 1rem 2rem;
+        font-size: 1.8rem;
+    }
+
+    .input-box .input::placeholder {
+        font-size: 1.5rem;
+    }
+
+    .input-box i {
+        display: none;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .experience-info img {
+        width: 70vw;
     }
 
     .logo {
@@ -1025,9 +938,7 @@ html, body {
     #menu-icon {
         font-size: 1.8rem;
     }
-}
 
-@media (max-width: 768px) {
     .experience {
         padding: 50px 5%;
     }
@@ -1062,5 +973,111 @@ html, body {
 
     .grid-card h3 {
         font-size: 1.6rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+/* Version 02 */
+
+@media(max-width:600px){
+    header #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 1rem;
+        width: 80%;
+        max-width: 600px;
+        padding: 1rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.9);
+        border-radius: 3rem;
+        display: none;
+    }
+    
+    .nav-links li {
+        margin-top: 1.5rem;
+        padding: 1rem;
+    }
+    .nav-links.active {
+        display: block;
+    }
+
+    header {
+        padding: 1rem 2rem;
+        gap: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .logo {
+        font-size: 1.5rem;
+    }
+
+    .about-container img {
+        width: 80vw;
+    }
+
+    .input-box input {
+        padding: 0.5rem 3rem;
+        width: 80%;
+        font-size: 1.5rem;
+    }
+    
+    .input-box input::placeholder {
+        font-size: 1.5rem;
+    }
+
+    footer ul {
+        gap: 1rem;
+    }
+
+    #projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
+
+/* Version 03 */
+
+@media(max-width:1280px){
+    header {
+        padding: 1rem 2rem;
+        gap: 2rem;
+    }
+    .about .about-container {
+        gap: 3rem;
+    }
+    .experience-info {
+        flex-direction: column;
+    }
+    .input-box input{
+        padding: 2rem 5rem;
+        font-size: 2.5rem;
+    }
+    .input input::placeholder{
+        font-size: 2.5rem;
+    }
+    .input-box i{
+        font-size: 2.5rem;
     }
 }
